@@ -1,0 +1,16 @@
+<view class="work-header">
+	<view class='header-name'>
+		<text>修改密码</text>
+	</view>
+</view>
+<view class="page-body">
+	<!-- <view class="page-section">
+		<view class="page-section-title">请输入账号</view>
+		<i-input value="{{account}}" type="number" bind:change='accountInput' title="账号" maxlength="20" autofocus />
+	</view> -->
+	<view class="page-section">
+		<view class="page-section-title">请输入登录密码</view>
+		<i-input value="{{password}}" type="password" bind:change='passwordInput' title="密码" maxlength="20" autofocus />
+	</view>
+	<i-button bind:click="submitGroup" type="primary">提交修改</i-button>
+</view>

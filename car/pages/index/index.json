@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "v-infoList":"/components/infoList/index",
+    "i-icon": "../../dist/icon/index",
+    "i-button": "../../dist/button/index"
+  }
+}

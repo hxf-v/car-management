@@ -1,0 +1,4 @@
+<view>
+    <v-infoList wx:for="{{list}}"  wx:key="" jobNumber="{{item.name}}" startTime="{{item.startTimeStr}}" endTime="{{item.endTimeStr}}" state="{{item.status}}" content="{{item.content}}" bind:tap="onselect" data-startTime="{{item.startTimeStr}}" data-endTime="{{item.endTimeStr}}"
+        data-state="{{item.status}}" data-content="{{item.content}}"></v-infoList>
+</view>

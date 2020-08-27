@@ -1,0 +1,14 @@
+<view class='container'>
+  
+  <view class='motto'>
+    <view>校内个人车辆管理平台</view>
+  </view>
+  <form bindsubmit="formSubmit">
+    <view class='Login-input'>
+      <input type='text' bindinput='jobNumInput' name="jobNumber" focus="true" placeholder='请输入您的账号'></input>
+      <input type="password" bindinput='idInput' name="idCard" placeholder='请输入您的密码'></input>
+    </view>
+    <button formType="submit" class="submit">登录</button>
+    <button catchtap="formReset" class="submit-res">注册</button>
+  </form>
+</view>

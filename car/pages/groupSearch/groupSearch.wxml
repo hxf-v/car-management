@@ -1,0 +1,86 @@
+<view class='bgWhite'>
+  <view class='timeSelect'>
+    <view class="page-section">
+      <view class="page-section-title">起始日期</view>
+      <picker mode="date" value="{{beginDate}}" bindchange="beginDateChange">
+        <view class="picker">
+          <text class="start-date">{{beginDate}}</text>
+        </view>
+      </picker>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title">结束日期</view>
+      <picker mode="date" value="{{endDate}}" bindchange="endDateChange">
+        <view class="picker">
+          <text class="start-date">{{endDate}}</text>
+        </view>
+      </picker>
+    </view>
+    <view class='searchBtb' bindtap='searchList'>
+      <i-icon size="28" color="#80848f" type="search" />
+    </view>
+  </view>
+
+  <text class="caption-title">历史行驶记录</text>
+  <!-- <i-tabs current="{{current}}" scroll bindchange="switchTab">
+    <i-tab wx:for="{{groupsName}}" key="{{item}}" wx:key="" title="{{item}}"></i-tab>
+  </i-tabs> -->
+</view>
+<view class='listContainer'>
+  <!-- <view wx:if="{{current === '设置记录'}}">
+    <i-collapse name="{{collapseName}}">
+      <block wx:for="{{indexList}}" wx:key="">
+        <i-collapse-item i-class-title="collapse-item-title" wx:if="{{item[0]['department']}}" title="{{item[0]['department']}}" name="{{item[0]['department']}}">
+          <block wx:for="{{item}}" wx:key="">
+            <view slot="content" class='itemContent'>
+              <view class='itemContent-item'>
+                <view class='itemContent-item-title'>工作记录</view>
+                <view class='itemContent-item-content'>{{item.record}}</view>
+              </view>
+              <view class='itemContent-item'>
+                <view class='itemContent-item-title'>相关问题</view>
+                <view class='itemContent-item-content'>{{item.noteAndQuestion}}</view>
+              </view>
+              <view class='itemContent-item'>
+                <view class='itemContent-item-title'>时间</view>
+                <view class='itemContent-item-content'>{{item.date}}</view>
+              </view>
+            </view>
+          </block>
+        </i-collapse-item>
+      </block>
+    </i-collapse>
+  </view> -->
+  <view class='listWW'>
+    <!-- <i-load-more wx:if="{{!groupList.length}}" tip="暂无数据" loading="{{ false }}" /> -->
+    <block wx:for="{{allRecord}}" wx:key="item.index">
+      <view class='itemContent group'>
+        <view class='itemContent-item'>
+          <view class='itemContent-item-title'>车牌号码</view>
+          <view class='itemContent-item-content'>{{item.plateNum}}</view>
+        </view>
+        <view class='itemContent-item'>
+          <view class='itemContent-item-title'>总停放时长</view>
+          <view class='itemContent-item-content'>{{item.parkingTime}}</view>
+        </view>
+        <view class='itemContent-item'>
+          <view class='itemContent-item-title'>总计费用</view>
+          <view class='itemContent-item-content'>{{item.cost}}</view>
+        </view>
+        <view class='itemContent-item'>
+          <view class='itemContent-item-title'>入校时间</view>
+          <view class='itemContent-item-content'>{{item.inTime}}</view>
+        </view>
+                <view class='itemContent-item'>
+          <view class='itemContent-item-title'>结算时间</view>
+          <view class='itemContent-item-content'>{{item.settlementTime}}</view>
+        </view>
+                <view class='itemContent-item'>
+          <view class='itemContent-item-title'>行驶路径编号</view>
+          <view class='itemContent-item-content'>{{item.routeAssemble}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+</view>

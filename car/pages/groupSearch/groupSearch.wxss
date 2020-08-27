@@ -1,0 +1,258 @@
+page {
+  min-height: 100%;
+  background-color: #f8f8f9;
+}
+
+view, text {
+  word-break: break-all;
+}
+
+.bgWhite {
+  background: white;
+}
+
+.timeSelect {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  background: white;
+  padding-top:10px;
+  padding-left:5px;
+
+}
+
+.picker {
+  position: relative;
+  margin-left: 20rpx;
+  color: #495060;
+  margin-right: 20rpx;
+}
+
+.start-date {
+  color: #495060;
+  font-size: 28rpx;
+  line-height: 60rpx;
+}
+
+.onelist {
+  padding: 1rpx;
+}
+
+.page-section {
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.searchBtb {
+  margin-left: 30rpx;
+}
+
+.status-btn {
+  display: inline-block;
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+  padding: 0 10rpx;
+  height: 40rpx;
+  border-radius: 4rpx;
+  background: #5cadff;
+  color: #fff;
+  font-size: 24rpx;
+  line-height: 40rpx;
+}
+
+.status-title {
+  font-size: 28rpx;
+}
+
+.cardContainer {
+  margin-top: 20rpx;
+}
+
+.paganation-control {
+  height: 120rpx;
+}
+
+.page-section-title {
+  font-size: 28rpx;
+  color: #2d8cf0;
+  font-weight: bold;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-left: 15rpx;
+}
+
+.page-section-picker {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.caption-wrap {
+  padding: 15rpx;
+}
+
+.caption-title {
+  line-height: 20rpx;
+  font-size: 36rpx;
+  color: #1c2438;
+  margin: 30rpx 0 70rpx 15rpx;
+  font-weight: bold;
+}
+
+.collapse-item-title {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 36rpx;
+  color: #1c2438;
+}
+
+.collapse-item-content {
+  font-size: 32rpx;
+  color: #495060;
+}
+
+/* pages/data/data.wxss */
+
+.timeSelect {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+}
+
+.picker {
+  position: relative;
+  margin-left: 20rpx;
+  color: #495060;
+  margin-right: 20rpx;
+}
+
+.start-date {
+  color: #495060;
+  font-size: 28rpx;
+  line-height: 60rpx;
+}
+
+.onelist {
+  padding: 1rpx;
+}
+
+.page-section {
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.searchBtb {
+  margin-left: 30rpx;
+}
+
+.status-btn {
+  display: inline-block;
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+  padding: 0 10rpx;
+  height: 40rpx;
+  border-radius: 4rpx;
+  background: #5cadff;
+  color: #fff;
+  font-size: 24rpx;
+  line-height: 40rpx;
+}
+
+.status-title {
+  font-size: 28rpx;
+}
+
+.cardContainer {
+  margin-top: 20rpx;
+}
+
+.paganation-control {
+  height: 120rpx;
+}
+
+.listContainer {
+  /* margin-top: 30rpx; */
+  background: #f8f8f9;
+  height: 412px;
+  overflow: auto;
+  padding-bottom: 30rpx;
+}
+
+.page-section-title {
+  font-size: 28rpx;
+  color: #2d8cf0;
+  font-weight: bold;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-left: 15rpx;
+}
+
+.page-section-picker {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.workDeatilWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.workDetailWrap-List {
+  display: flex;
+}
+
+.workDetailTitle {
+  flex: 0 0 130rpx;
+}
+
+.workDetailcontent {
+  flex: 1;
+}
+
+.marginBottom {
+  margin-bottom: 30rpx;
+}
+
+.collapse-item-title {
+  font-size: 33rpx;
+  color: #1c2438;
+}
+.group{
+  margin-left: 20rpx;
+}
+.itemContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #e9eaec;
+  font-size: 28rpx;
+  padding-top: 30rpx;
+  color: #495060;
+}
+.itemContent-item {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  flex: 0 0 25%;
+}
+.itemContent-item-title {
+  color: #2d8cf0;
+  font-weight: bold;
+  flex: 0 0 200rpx;
+  height: 100%;
+}
+.listWW{
+  width: 100%;
+  overflow: hidden
+}
+.itemContent-item-content{
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

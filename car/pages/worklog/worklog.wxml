@@ -1,0 +1,14 @@
+<view animation="{{animationData}}" style="height:{{cardHeight}};">
+    <!-- <view wx:if="{{hasUnwork}}"></view> -->
+    <!-- <view class='workCard' style="margin-top:{{cardHeight}};">
+        <i-card bind:clickImage='clickImage' title="{{cardTitle}}" extra="{{cardTime}}" thumb="/images/time.png">
+        </i-card>
+    </view> -->
+    <!-- <view wx:else class="addWorkInfo">
+    <image class='addWorkInfo-img' src='/images/ahu-title.jpg'></image> -->
+    <!-- <i bind:tap="toWriteInfo" class="fa fa-plus-square-o  addWorkInfo-btn" aria-hidden="true"></i> -->
+    <!-- <view class='header-user-btn' bind:tap="toWriteInfo">加班登记</view>
+  </view> -->
+</view>
+<v-infoList wx:for="{{list}}" wx:key="" jobNumber="{{item.name}}" startTime="{{item.startTimeStr}}" endTime="{{item.endTimeStr}}" state="{{item.status}}" content="{{item.content}}" bind:tap="onselect" data-startTime="{{item.startTimeStr}}" data-endTime="{{item.endTimeStr}}"
+    data-state="{{item.status}}" data-content="{{item.content}}"></v-infoList>

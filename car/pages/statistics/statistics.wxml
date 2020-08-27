@@ -1,0 +1,81 @@
+<wxs src="../../style.wxs" module="style" />
+<view class='connnn'>
+  <view class='car-con'>
+    <!-- <image class='car-img' src='/images/aodi.jpg'></image> -->
+    <image class='car-img' src='{{imgCar}}'></image>
+    <i-tag class="i-tags" name="校内车辆" color="green">
+      校内车辆
+    </i-tag>
+  </view>
+  <i-card class='my-card' title="{{chepai}}">
+    <view class='tName' slot="content">ID: {{id}}</view>
+    <view class='tName' slot="content">用户名: {{name}}</view>
+    <view class='tName' slot="content">帐号：{{jobNumber}}</view>
+    <!-- <view class='tName' slot="content">密码：{{password}}</view> -->
+    <view class='tName' slot="content">注册时间：{{time}}</view>
+    <view class='tName' slot="content">状态：{{state}}</view>
+  </i-card>
+
+  <i-button class='my-btn' bind:click="handleClick" size="small" type="primary">停车场实况</i-button>
+  <i-button class='my-btn' bind:click="handleClick2"  size="small" type="primary">实时行驶记录查询</i-button>
+  
+  <i-modal title="停车场实况" visible="{{ visible1 }}" bind:ok="handleClose1" bind:cancel="handleClose1">
+    <view class='listWW'>
+    <block wx:for="{{ParkData}}">
+      <view class='itemContent group'>
+        <view class='itemContent-item'>
+          <view class='itemContent-item-title'>停车区域编号</view>
+          <view class='itemContent-item-content'>{{item.areaId}}</view>
+        </view>
+        <view class='itemContent-item'>
+          <view class='itemContent-item-title'>停车区域名称</view>
+          <view class='itemContent-item-content'>{{item.areaName}}</view>
+        </view>
+        <view class='itemContent-item'>
+          <view class='itemContent-item-title'>被占用车位数量</view>
+          <view class='itemContent-item-content'>{{item.occupy}}</view>
+        </view>
+        <view class='itemContent-item'>
+          <view class='itemContent-item-title'>剩余车位数量</view>
+          <view class='itemContent-item-content'>{{item.surplus}}</view>
+        </view>
+        <view class='itemContent-item'>
+          <view class='itemContent-item-title'>车位总数</view>
+          <view class='itemContent-item-content'>{{item.total}}</view>
+        </view>
+      </view>
+    </block>
+    </view>
+  </i-modal>
+
+  <i-modal title="实时行驶记录" visible="{{ visible2 }}" bind:ok="handleClose2" bind:cancel="handleClose2">
+    <view class='listWW'>
+    <block wx:for="{{DrivingData}}">
+      <view class='itemContent group'>
+        <view class='itemContent-item'>
+          <view class='itemContent-item-title'>id</view>
+          <view class='itemContent-item-content'>{{item.id}}</view>
+        </view>
+        <view class='itemContent-item'>
+          <view class='itemContent-item-title'>拍摄时间</view>
+          <view class='itemContent-item-content'>{{item.shootingTime}}</view>
+        </view>
+        <view class='itemContent-item'>
+          <view class='itemContent-item-title'>拍摄设备</view>
+          <view class='itemContent-item-content'>{{item.equipId}}</view>
+        </view>
+        <view class='itemContent-item'>
+          <view class='itemContent-item-title'>行驶记录类型</view>
+          <view class='itemContent-item-content'>{{item.state}}</view>
+        </view>
+        <view class='itemContent-item'>
+          <view class='itemContent-item-title'>车牌号码</view>
+          <view class='itemContent-item-content'>{{item.plateNum}}</view>
+        </view>
+      </view>
+    </block>
+    </view>
+  </i-modal>
+</view>
+
+

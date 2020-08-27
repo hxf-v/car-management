@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/statistics/statistics",
+    "pages/groupSearch/groupSearch",
+    "pages/groupAdd/groupAdd",
+    "pages/index/index",
+    "pages/register/register",
+    "pages/worklog/worklog",
+    "pages/about/about",
+    "pages/unworking/unworking",
+    "pages/groupIndex/groupIndex",
+    "pages/editPwd/editPwd",
+    "pages/editCar/editCar"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "校内个人车辆管理平台",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "color": "#c7c7c7",
+    "list": [
+      {
+        "pagePath": "pages/statistics/statistics",
+        "selectedIconPath": "/images/tab/index@highlight.png",
+        "iconPath": "/images/tab/index.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/groupSearch/groupSearch",
+        "selectedIconPath": "/images/tab/info@highlight.png",
+        "iconPath": "/images/tab/info.png",
+        "text": "查询"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "selectedIconPath": "/images/tab/about@highlight.png",
+        "iconPath": "/images/tab/about.png",
+        "text": "设置"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

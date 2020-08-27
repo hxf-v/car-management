@@ -1,0 +1,33 @@
+<view class="work-header">
+	<view class='header-name'>
+		<text>账号注册</text>
+	</view>
+</view>
+<view class="page-body">
+	<view class="page-section">
+		<view class="page-section-title">请选择日期</view>
+		<picker mode="date" value="{{date}}" bindchange="bindDateChange">
+			<view class="picker">
+				<text class="start-date">日期: {{date}}</text>
+				<text class='rightarr'>></text>
+			</view>
+		</picker>
+	</view>
+	<view class="page-section">
+		<view class="page-section-title">请输入账号</view>
+		<i-input value="{{account}}" type="number" bind:change='accountInput' title="账号" maxlength="100" autofocus />
+	</view>
+	<view class="page-section">
+		<view class="page-section-title">请输入用户名</view>
+		<i-input value="{{userName}}" type="text" bind:change='userNameInput' title="用户名" maxlength="100" autofocus />
+	</view>
+	<view class="page-section">
+		<view class="page-section-title">请输入登录密码</view>
+		<i-input value="{{password}}" type="password" bind:change='passwordInput' title="密码" maxlength="100" autofocus />
+	</view>
+	<view class="page-section">
+		<view class="page-section-title">请输入车辆车牌号</view>
+		<i-input value="{{plateNum}}" type="text" bind:change='plateNumInput' title="车牌号" maxlength="100" autofocus />
+	</view>
+	<i-button bind:click="submitGroup" type="primary">提交注册</i-button>
+</view>

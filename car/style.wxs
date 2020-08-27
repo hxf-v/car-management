@@ -1,0 +1,36 @@
+var Icon = function(rank) {
+    if (rank == 0) {
+        return '/images/0.png'
+    }
+    if (rank == 1) {
+        return '/images/1.png'
+    }
+    if (rank == 2) {
+        return '/images/2.png'
+    }
+    else {
+        return ''
+    }
+}
+var Num = function (rank) {
+    if (rank > 2) {
+        return rank + 1
+    }
+}
+var Time = function(time){
+    return Math.floor(time / 60) + '小时' + time % 60 + '分钟'
+}
+var Slice = function (date){
+    return date.slice(0, 10)
+}
+// var ImgClass = function (index) {
+//     if(index <= 3){
+//         return
+//     }
+// }
+module.exports = {
+    Icon: Icon,
+    Num: Num,
+    Slice: Slice,
+    Time: Time
+}

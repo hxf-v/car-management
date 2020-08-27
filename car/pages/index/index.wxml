@@ -1,0 +1,32 @@
+<view class='imagesize'>
+    <image src="/images/work.png" class='in-image' mode='widthFix'>
+    </image>
+</view>
+<view class='bg'>
+    <view class="menu-container">
+        <view class="menu-item" bind:tap="toRegister">
+            <i class="fa fa-edit item-icon" aria-hidden="true"></i>
+            <i-button type="ghost" inline="true" size="small">加班登记</i-button>
+        </view>
+        <view class="menu-item" bind:tap="toWorkLog">
+            <i class="fa fa-search item-icon" aria-hidden="true"></i>
+            <i-button type="ghost" inline="true" size="small">加班查询</i-button>
+        </view>
+    </view>
+    <!-- <view class="menu-container">
+        <view class="menu-item" bind:tap="toGroupAdd">
+            <i class="fa fa-users item-icon" aria-hidden="true"></i>
+            <i-button type="ghost" inline="true" size="small">部门登记</i-button>
+        </view>
+        <view class="menu-item" bind:tap="toGroupSearch">
+            <i class="fa fa-newspaper-o item-icon" aria-hidden="true"></i>
+            <i-button type="ghost" inline="true" size="small">部门查询</i-button>
+        </view>
+    </view> -->
+    <view class='line'>
+        <view class="menu-item-line" bind:tap="toStatistics">
+            <i-button class="item-text-line" type="ghost" inline="true" size="small">加班统计</i-button>
+            <i class="fa fa-line-chart item-icon-line" aria-hidden="true"></i>
+        </view>
+    </view>
+</view>

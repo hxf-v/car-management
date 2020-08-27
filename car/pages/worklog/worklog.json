@@ -1,0 +1,11 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "近两月加班记录",
+  "navigationBarTextStyle": "black",
+  "navigationStyle": "default",
+  "backgroundColorBottom": "#F8F8F8",
+  "usingComponents": {
+    "v-infoList": "/components/infoList/index",
+    "i-card": "../../dist/card/index"
+  }
+}

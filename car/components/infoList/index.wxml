@@ -1,0 +1,15 @@
+<view class="{{state === '完成加班'?'list-container':'list-container-no'}}">
+  <view class="list-header">
+    <text class='list-header-title'>{{jobNumber}}</text>
+    <text class="{{state === '完成加班'? 'list-header-state':'list-header-state-no'}}">{{state}}</text>
+  </view>
+  <view class="list-content">
+    <text>{{content}}</text>
+  </view>
+  <view class="list-time-con">
+    <text class="list-time-a"></text>
+    <text class="list-time">
+      {{newStartTime}} - {{newEndTime}}
+    </text>
+  </view>
+</view>

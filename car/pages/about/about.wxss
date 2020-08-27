@@ -1,0 +1,44 @@
+.work-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 240rpx;
+  background: #5caeff88;
+  margin-bottom: 30rpx
+}
+
+.header-img-btn {
+  position: relative;
+  width: 80rpx;
+  height: 80rpx;
+  background: white;
+  border-radius: 100rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.header-img {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 82rpx;
+  height: 82rpx;
+}
+
+.header-name {
+  font-size: 35rpx;
+  color: #333;
+}
+.line-item{
+  display: flex
+}
+.line-input {
+  flex: 0 0 80%
+}
+.line-btn {
+  display: flex;
+  align-items: center
+}

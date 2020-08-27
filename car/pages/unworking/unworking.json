@@ -1,0 +1,10 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "未完成的加班",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "backgroundColorBottom": "#F8F8F8",
+    "usingComponents": {
+        "v-infoList": "/components/infoList/index"
+    }
+}
