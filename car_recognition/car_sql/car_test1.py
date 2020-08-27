@@ -8,7 +8,7 @@ from sqlalchemy import create_engine
 from car_spot import recognize_plate
 
 # 连接配置
-db_url = "mssql+pymssql://sa:Ahu123@172.16.254.224:1433/CarManagement"
+db_url = "mssql+pymssql://sa:zhude@123@10.253.0.202:1433/CarManagement"
 engine = create_engine(db_url, encoding='utf8', echo=False)
 
 # 待操作的文件夹路径
